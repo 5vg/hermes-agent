@@ -1028,7 +1028,6 @@ class SlashCommandCompleter(Completer):
         self._file_cache_cwd = cwd
         return files
 
-    @staticmethod
     def _score_path(self, filepath: str, query: str) -> int:
         """Score a file path against a fuzzy query. Higher = better match."""
         if not query:
